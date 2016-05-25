@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242">
+
+        <ImageView
+            android:id="@+id/android"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="10"
+            android:scaleType="centerInside"
+            android:background="#424242"
+            android:src="@drawable/android" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Esta app fue diseñada con fines academicos por los alumnos de la materia Topicos Avanzados de Programacion:
+        Raul Rafael Carvajal Gutierrez
+        César Ramsés Espino Serrano
+        Flor Mariela Lopez Araiza"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:textColor="#a2dde9e9"
+        android:textStyle="italic"
+        android:layout_below="@id/android"/>
+
+
+
+</RelativeLayout>

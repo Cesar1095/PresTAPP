@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rrafael_cg.prestapp.PrincipalActivity"
+    style="@style/Base.V11.Theme.AppCompat.Light.Dialog"
+    android:background="#222222">
+
+    <TextView
+        android:id="@+id/PrimerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de prestamos"
+        android:textColor="#ffffffff"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textSize="35sp"
+        android:textAlignment="center" />
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context="ittepic.prestapp.Principal"
+        style="@style/Base.V11.Theme.AppCompat.Light.Dialog"
+        android:background="#222222">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10sp"
+            android:orientation="vertical"
+            android:background="#222222">
+
+            <ImageButton
+                android:id="@+id/NuevoPres"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:scaleType="fitCenter"
+                android:background="#222222"
+                android:src="@drawable/nuevo_prest"
+
+                android:onClick="AbrirNuevo" />
+            <TextView
+                android:id="@+id/nuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nuevo prestamo"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10sp"
+            android:orientation="vertical"
+            android:background="#222222">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:scaleType="fitCenter"
+                android:id="@+id/Verpresta"
+                android:src="@drawable/lista_prest"
+                android:background="#222222"
+
+                android:onClick="AbrirReg"/>
+
+            <TextView
+                android:id="@+id/lista"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lista de prestamos"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="10sp"
+            android:background="#222222">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:scaleType="fitCenter"
+                android:id="@+id/Config"
+                android:src="@drawable/conf"
+
+                android:background="#222222"
+                android:onClick="AbrirConf" />
+            <TextView
+                android:id="@+id/Configuracion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="configuracion"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic"
+                android:typeface="serif"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

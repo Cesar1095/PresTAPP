@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PresTAPP</string>
+    <string-array name="Combo">
+        <item>"Hola"</item>
+        <item>"El "</item>
+        <item>"Baile"</item>
+        <item>"Con el Perro"</item>
+    </string-array>
+</resources>

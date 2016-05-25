@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#424242"
+    tools:context="com.example.rrafael_cg.prestapp.NuevoPres">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="A R T I C U L O"
+            android:id="@+id/textView"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:textColor="#C4C4C4"
+            android:textSize="14dp"
+            android:hint="Q U E   V A S   A   P R E S T A R" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="P E R S O N A "
+            android:id="@+id/textView2"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:textColor="#c4c4c4"
+            android:textSize="14dp"
+            android:hint="A  Q U I E N   L E   P R E S T A R Á S"
+            android:allowUndo="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="T I P O  D E   A R T I C U L O"
+            android:id="@+id/textView3"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoy estamos a:"
+            android:id="@+id/fec"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout7">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinner"
+            android:entries="@array/Combo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout9">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="#212121"
+            android:onClick="Limpiar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/linearLayout7"
+        android:id="@+id/linearLayout8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="F E C H A   D E   D E V O L U C I O N"
+            android:id="@+id/textView4"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:longClickable="false" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/datePicker"
+            android:calendarViewShown="false"
+            android:clickable="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout9"
+        android:layout_toRightOf="@+id/linearLayout9"
+        android:layout_toEndOf="@+id/linearLayout9"
+        android:gravity="right">
+
+        <ImageButton
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton2"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_gravity="right"
+            android:background="#212121" />
+    </LinearLayout>
+</RelativeLayout>

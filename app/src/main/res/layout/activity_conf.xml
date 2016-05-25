@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#424242"
+    tools:context="com.example.rrafael_cg.prestapp.Conf">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout10">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Ver devoluciones"
+            android:id="@+id/button"
+            android:textColor="#ffffff"
+            android:allowUndo="true"
+            android:background="#222222" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="agregar tipo de artículo"
+            android:id="@+id/button2"
+            android:textColor="#ffffff"
+            android:allowUndo="true"
+            android:onClick="OpenNT"
+            android:background="#222222" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="acerca de"
+            android:id="@+id/button3"
+            android:textColor="#ffffff"
+            android:allowUndo="true"
+            android:background="#222222" />
+    </LinearLayout>
+</RelativeLayout>
